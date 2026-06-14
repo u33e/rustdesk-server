@@ -34,7 +34,7 @@ jobs:
           - { name: "amd64",   target: "x86_64-unknown-linux-musl" }
           - { name: "arm64v8", target: "aarch64-unknown-linux-musl" }
           - { name: "armv7",   target: "armv7-unknown-linux-musleabihf" }
-          - { name: "i386",    target: "i686-unknown-linux-musl" }
+          # - { name: "i386",    target: "i686-unknown-linux-musl" }
           #- { name: "amd64fb",    target: "x86_64-unknown-freebsd" }
 
     steps:
@@ -180,7 +180,7 @@ jobs:
           - { os: "linux", name: "amd64", suffix: "" }
           - { os: "linux", name: "arm64v8", suffix: "" }
           - { os: "linux", name: "armv7", suffix: "" }
-          - { os: "linux", name: "i386", suffix: "" }
+          # - { os: "linux", name: "i386", suffix: "" }
           #- { os: "linux", name: "amd64fb", suffix: "" }
           - { os: "windows", name: "x86_64", suffix: "-unsigned" }
           
@@ -474,7 +474,7 @@ jobs:
           - { name: "amd64",   debian_platform: "amd64",   crossbuild_package: "" }
           - { name: "arm64v8", debian_platform: "arm64",   crossbuild_package: "crossbuild-essential-arm64" }
           - { name: "armv7",   debian_platform: "armhf",   crossbuild_package: "crossbuild-essential-armhf" }
-          - { name: "i386",    debian_platform: "i386",    crossbuild_package: "crossbuild-essential-i386" }
+          # - { name: "i386",    debian_platform: "i386",    crossbuild_package: "crossbuild-essential-i386" }
 
     steps:
 
